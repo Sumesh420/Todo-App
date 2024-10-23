@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #212121;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  
+  position: relative;
+}
+.todos-container {
+    width:65vw;
+    min-height:70vh;
+    border: 2px solid white;
+    padding:2.5rem;
+   
+}
+.nav {
+    /* width:100%; */
+  display: flex;
+  justify-content: space-between;
+  min-height:10vh;
+}
+.main-heading {
+  font-weight: 370;
+  font-size:2.3rem;
+}
+
+.add-item{
+    font-size:2rem;
+    font-weight:300;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   
+}
+.add-btn{
+    font-size:1.5rem;
+    background-color:rgb(47, 109, 225);
+    border-radius: 50%;
+    border:none;
+    padding: 0.2rem 0.3rem;
+    margin-right: 7px;
+
+}
+.add-btn i{
+    font-weight: 900;
+}
+
+
+
+/* input Btn Design */
+.input-container{
+    position: absolute;
+    top:30%;
+    width:30vw;
+    height:35vh;
+    border:1px solid orangered;
+    border-radius:10px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #fff;
+    
+    
+}
+.input{
+  
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.7rem;
+}
+.input-heading{
+    color:orangered;
+    font-weight:400;
+    font-size: 1.5rem;
+}
+.input-text{
+    padding:0.5rem;
+    border:1px solid orangered;
+    border-radius:10px;
+    width:12rem;
+}
+.input-text::placeholder{
+    text-align: center;
+}
+.input-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  
+}
+.btn{
+    padding:0.6rem;
+    font-size:1.3rem;
+    color:white;
+    background-color: orangered;
+    border:none;
+    border-radius:18px;
+    width:5rem;
+    
+}
+
+.blur{
+    filter:blur(8px);
+    pointer-events: none;
+}
+
+.hidden{
+    filter: blur(15px);
+    pointer-events: none;
+}
+
+/* Designing Single Todo */
+.main{
+    width:100%;
+}
+.todosContainer{
+    display:flex;
+    justify-content: center;
+   align-items: flex-start;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+.no-item{
+    font-size:1.7rem;
+    font-weight:300;
+    margin-top:15px;
+    align-self: start;
+}
+.todo{
+    display:flex;
+    flex-direction: column;
+    background-color: #fff;
+    width:15vw;
+    min-height:40vh;
+    border:1px solid orangered;
+    border-radius: 10px;
+ 
+}
+.todo-container{
+    min-height:34vh;
+   
+}
+.todo-heading{
+    color:orangered;
+    text-align: center;
+    font-size:1rem;
+    font-weight:300;
+    padding:0.6rem;
+}
+.todo-text{
+    color:rgb(56, 56, 117);
+    text-align:center;
+    
+}
+.todo-btns{
+    align-self: end;
+    display:flex;
+    margin-bottom:0.7rem;
+}
+.trash-btn{
+    background-color: orangered;
+}
+.todobtn{
+padding:0.3rem;
+border:none;
+border-radius:50%;
+margin-right:10px;
+font-size:1rem;
+font-weight:900;
+
+}
+
+.addTodo-btn{
+    background-color:rgb(47, 109, 225);
+}
+
+/* mark todo */
+
+.todo-list{
+    padding:0.7rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+  
+    
+}
+.todo-mark{
+    display:flex;
+    gap:0.2rem;
+}
+.mark-btn{
+    background-color: rgb(85, 124, 195);
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:0.4rem;
+    font-size:0.7rem;
+    
+}
+.completed{
+    text-decoration: line-through;
+    color:gray;
+}
+
+
+.hiddenList{
+    opacity:0;
+    pointer-events: none;
+}
