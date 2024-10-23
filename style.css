@@ -17,7 +17,7 @@ body {
 .todos-container {
     width:65vw;
     min-height:70vh;
-    border: 2px solid white;
+    
     padding:2.5rem;
    
 }
