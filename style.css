@@ -159,8 +159,9 @@ body {
 }
 @media screen and (min-width:300px) and (max-width:650px){
 .todo{
-    width:30vw;
+    width:35vw;
 }
+
 }
 .todo-container{
     min-height:34vh;
@@ -178,6 +179,8 @@ body {
 .todo-text{
     color:rgb(56, 56, 117);
     text-align:center;
+    text-overflow:ellipsis;
+    overflow:hidden;
     
 }
 .todo-btns{
