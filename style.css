@@ -159,10 +159,12 @@ body {
 }
 @media screen and (min-width:300px) and (max-width:650px){
 .todo{
-    width:35vw;
+    width:45vw;
+}
 }
 
-}
+
+
 .todo-container{
     min-height:34vh;
    
@@ -219,16 +221,45 @@ font-weight:900;
 }
 .todo-mark{
     display:flex;
+    justify-content: center;
+    align-items: center;
     gap:0.2rem;
+    width:13vw;
 }
+
+
 .mark-btn{
     background-color: rgb(85, 124, 195);
     color:white;
     border:none;
     border-radius:10px;
-    padding:0.4rem;
+    padding:0.5rem;
     font-size:0.7rem;
     
+    
+}
+
+
+@media screen and (min-width:651px) and (max-width:1200px){
+    .todo{
+        width:30vw;
+    }
+    .todo-mark{
+        width:27vw;
+    }
+    .mark-btn{
+        padding:0.4rem;
+        font-size:0.7rem;
+    }
+}
+@media screen and (min-width:300px) and (max-width:650px){
+    .todo-mark{
+        width:42vw
+    }
+    .mark-btn{
+        font-size:0.4rem;
+        padding:0.2rem;
+    }
 }
 .completed{
     text-decoration: line-through;

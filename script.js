@@ -136,8 +136,15 @@ if (todos) {
   closeBtn.addEventListener("click", () => {
     inputContainer.remove();
     removeBlur();
-   
-    mainPara.classList.remove("hiddenList");
+    const todos = document.querySelectorAll(".todo");
+    if (todos) {
+      todos.forEach(ele=>{
+        ele.classList.remove("blur");
+        mainPara.classList.add("hiddenList");
+      });
+    }
+    // mainPara.classList.remove("hiddenList");
+
     
   });
 }
@@ -164,7 +171,7 @@ function addSingleTodo(inputValue) {
   todosCont.appendChild(singleTodo);
   const todo=todosCont.querySelector(".todo");
  
-    mainPara.remove();
+    mainPara.classList.add("hiddenList");
     // removeBlur();
     
 
@@ -183,6 +190,10 @@ function bindTodoButtons(singleTodo) {
   trashBtn.addEventListener("click", () => {
     singleTodo.remove();
     removeTodoFromLS(singleTodo);
+    const todos = document.querySelectorAll(".todo");
+if (todos.length<=0) {
+  mainPara.classList.remove("hiddenList");
+}
   });
 
   addListBtn.addEventListener("click", () => {
