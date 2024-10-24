@@ -17,9 +17,11 @@ body {
 .todos-container {
     width:65vw;
     min-height:70vh;
+    
     padding:2.5rem;
    
 }
+
 .nav {
     /* width:100%; */
   display: flex;
@@ -68,6 +70,15 @@ body {
     align-items:center;
     background-color: #fff;
     
+    
+}
+@media screen and (min-width:300px) and (max-width:650px){
+    .todos-container{
+        width:90vw;
+    }
+    .input-container{
+        width:60vw;
+    }
     
 }
 .input{
@@ -146,6 +157,11 @@ body {
     border-radius: 10px;
  
 }
+@media screen and (min-width:300px) and (max-width:650px){
+.todo{
+    width:30vw;
+}
+}
 .todo-container{
     min-height:34vh;
    
@@ -156,6 +172,8 @@ body {
     font-size:1rem;
     font-weight:300;
     padding:0.6rem;
+    text-overflow:ellipsis;
+    overflow: hidden;
 }
 .todo-text{
     color:rgb(56, 56, 117);
