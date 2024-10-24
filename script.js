@@ -143,7 +143,10 @@ if (todos) {
         mainPara.classList.add("hiddenList");
       });
     }
-    // mainPara.classList.remove("hiddenList");
+    if(todos.length<=0){
+      mainPara.classList.remove("hiddenList");
+    }
+    // 
 
     
   });
